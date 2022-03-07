@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+</head>
+<body>
+    <h1>Restaurant KEA</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <p>
+        <i>
+            Guldbergsgade 29
+            <br/>
+            2200 Copenhagen
+        </i>
+    </p>
+    <p><i>Phone no.: <a href="tel:+20825370">20 82 53 70</a></i></p>
+    <i>E-mail: <a href="mailto:info@restaurantkea.dk">info@restaurantkea.dk</a></i>
+    <br/>
+    <img src="img/map.jpg" alt="map location of KEA">
+    <form action="mailto:info@restaurantkea.dk" method="POST">
+        <fieldset>
+            <legend>Contact form</legend>
+            <div>
+                <label for="fullName">Full name</label>
+                <input name="fullName" type="text">
+            </div>
+            <div>
+                <label for="phoneNum">Phone no.</label>
+                <input name="phoneNum" type="phone">
+            </div>
+            <div>
+                <label for="persons">Persons</label>
+                <input name="persons" type="number" value="2" required min="1" max="20">
+            </div>
+            <div>
+                <label for="dateTime">Date and time</label>
+                <input type="datetime" name="dateTime">
+            </div>
+            <div>
+                <label for="furtherInfo">Further information</label>
+                <br/>
+                <textarea name="furtherInfo" type="datetime" ></textarea>
+            </div>
+            <div>
+                <input type="submit" value="Send">
+            </div>
+        </fieldset>
+    </form>
+
+    <!-- for sending in the url (display hidden) -->
+    <form action="process.php" method="GET" style="display: none;">
+        <fieldset>
+            <legend>Contact form</legend>
+            <div>
+                <label for="fullName">Full name</label>
+                <input name="fullName" type="text">
+            </div>
+            <div>
+                <label for="phoneNum">Phone no.</label>
+                <input name="phoneNum" type="phone">
+            </div>
+            <div>
+                <label for="persons">Persons</label>
+                <input name="persons" type="number" value="2" required min="1" max="20">
+            </div>
+            <div>
+                <label for="dateTime">Date and time</label>
+                <input type="datetime" name="dateTime">
+            </div>
+            <div>
+                <label for="furtherInfo">Further information</label>
+                <br/>
+                <textarea name="furtherInfo" type="datetime" ></textarea>
+            </div>
+            <div>
+                <input type="submit" value="Send">
+            </div>
+        </fieldset>
+    </form>
+    <footer>
+        <p>&copy; KEA Development</p>
+    </footer>
+</body>
+</html>
