@@ -1,0 +1,110 @@
+main {
+    width: 75%;
+    max-width: 900px;
+    border: 2px solid aquamarine;
+    margin: auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background: aquamarine;
+    padding: .5rem 1rem;
+}
+
+header h1 {
+    margin: 0;
+    padding: 0 1rem;
+}
+
+header button {
+    padding: 0 2rem;
+}
+
+section {
+    background: rgb(171, 171, 171);
+    margin: 1rem;
+    border-radius: 1rem;
+}
+
+section > div {
+    padding: 0 1rem;
+    display: grid;
+    gap: .5rem;
+    grid-template-columns: 100fr 100fr 100fr;
+}
+
+section .items {
+    background: gray;
+    overflow: hidden;
+    padding: 1rem 1rem;
+    border-radius: 0 0 1rem 1rem;
+}
+
+section .items .dropcolumn {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border-radius: 1rem;
+    background: rgb(88, 88, 88);
+    min-height: 600px;
+    padding: .5rem;
+}
+
+section .items #new_btn {
+    background: white;
+    font-size: 2rem;
+    padding: .7rem 0;
+    border-radius: .5rem;
+    display: flex;
+    justify-content: center;
+}
+
+section .items #new_btn:hover{
+    background-color: whitesmoke;
+    color: black;
+    cursor: pointer;
+}
+
+section .items .list_item {
+    padding: .7rem .5rem;
+    border-radius: .5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+section .items #todo .list_item {
+    background: rgb(255, 163, 71);
+}
+
+section .items #ongoing .list_item {
+    background: rgb(255, 232, 85);
+}
+
+section .items #done .list_item {
+    background: rgb(142, 255, 90);
+}
+
+.modal {
+    position: fixed;
+    inset: 0;
+    width: 50%;
+    height: fit-content;
+    margin: 5vh auto;
+    background-color: whitesmoke;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+#todo_form textarea {
+    width: 100%;
+}
+
+#todo_form > div {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-top: 1rem;
+}

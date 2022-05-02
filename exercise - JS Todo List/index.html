@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type='text/javascript' src="js/script.js" defer></script>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>To Do List</h1>
+            <button class='modal_toggle' id="help_btn">Help</button>
+        </header>
+        <section>
+            <div>
+                <p>To do</p>
+                <p>Ongoing</p>
+                <p>Done</p>
+            </div>
+            <div class="items">
+                <div id="todo" class="dropcolumn">
+                    <div class='modal_toggle' id="new_btn">
+                        +
+                    </div>
+                </div>
+                <div id="ongoing" class="dropcolumn">
+                    
+                </div>
+                <div id="done" class="dropcolumn">
+                    
+                </div>
+            </div>
+        </section>
+    </main>
+    <div class="modal" id="new_modal" style="display: none;">
+        <form id="todo_form">
+            <textarea name="" id="todo_text" cols="30" rows="10" placeholder="Your text here"></textarea>
+            <div>
+                <input type="submit" value="Add">
+                <button class='modal_toggle' id="cancel_btn">Cancel</button>
+            </div>
+        </form>
+    </div>
+    <div class="modal" id="help_modal" style="display: none;">
+        <p>
+            Add a new "to do" task by pressing the plus ("+") button. <br>
+            Move a task from one area to another ("to do", "ongoing", "done") by dragging and dropping it
+        </p>
+        <button class="modal_toggle" id="ok_btn">OK</button>
+    </div>
+</body>
+</html>

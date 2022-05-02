@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type='text/javascript' src="js/script.js" defer></script>
+</head>
+<body>
+    <main>
+        <h1>Tax Calculator</h1>
+        <form id="convertForm">
+            <label for="temperature">Temperature</label>
+            <input name="temperature" type="text" id="temperature" pattern="\d*(\.\d{0,2})?" value="0" required>
+
+            <div class="selections">
+                <div>
+                    <label for="from">From:</label>
+                    <select name="from" id="from">
+                        <option value="C" selected>Celcius</option>
+                        <option value="F">Fahrenheit</option>
+                        <option value="K">Kelvin</option>
+                    </select>                
+                </div>
+                <div>
+                    <label for="to">To:</label>
+                    <select name="to" id="to">
+                        <option value="C">Celcius</option>
+                        <option value="F" selected>Fahrenheit</option>
+                        <option value="K">Kelvin</option>
+                    </select>
+                </div>
+            </div>
+            <input type="submit" value="Convert">
+        </form>
+        <section id="output">
+            &nbsp;
+        </section>
+        <div></div>
+    </main>
+</body>
+</html>

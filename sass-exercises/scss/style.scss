@@ -1,0 +1,17 @@
+$fontMain: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+$colorMain: grey;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: $fontMain;
+}
+
+main {
+    * {
+        border: 1px solid $colorMain;
+    }
+}

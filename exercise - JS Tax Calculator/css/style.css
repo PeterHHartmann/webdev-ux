@@ -1,0 +1,38 @@
+main {
+    width: 50%;
+    border: 2px solid aquamarine;
+}
+
+h1 {
+    margin-top: 0;
+    background: aquamarine;
+    padding: 0 1rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    margin: 1rem;
+}
+
+form label {
+    margin-block-start: .5rem;
+}
+
+form input[type="text"] {
+    width: 45%;
+}
+
+form input[type="submit"] {
+    width: 20%;
+    padding: .5rem 0
+}
+
+section {
+    padding: 2rem;
+    background: rgb(171, 171, 171);
+    margin: 1rem;
+    border-radius: 1rem;
+    
+}

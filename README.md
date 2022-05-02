@@ -1,2 +1,2 @@
 # webdev-ux
-Repository for exercises and mandatory assignments during BA in Web Development
+Repository for HTML, CSS, SASS and JavaScript exercises and mandatory assignments during BA in Web Development

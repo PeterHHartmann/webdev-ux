@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tax Calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type='text/javascript' src="js/script.js" defer></script>
+</head>
+<body>
+    <main>
+        <h1>Tax Calculator</h1>
+        <form id="taxForm">
+            <label for="monetary">Monetary amount</label>
+            <input name="monetary" type="text" id="monetary" pattern="\d*(\.\d{0,2})?" value="0" required>
+            <label for="tax_rate">Tax percentage</label>
+            <input name="tax_rate" type="text" id="tax_rate" pattern="\d*(\.\d{0,2})?" value="0" required>
+            <input type='submit' id="submitBtn" value="Calculate">
+        </form>
+        <section id="output">
+            Tax amount: <span id="tax_amount">0</span>
+            </br>
+            Final amount: <span id="final_amount">0</span>
+        </section>
+        <div></div>
+    </main>
+</body>
+</html>
