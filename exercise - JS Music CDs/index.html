@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <script src="js/crud.js" defer></script>
+    <title>Music CDs</title>
+</head>
+<body>
+    <main>
+        <h1>Music CDs</h1>
+        <section>
+            <form action="POST">
+                <label for="author">
+                    <span>Author</span>
+                    <input type="text" name="author" id="input-author" required>
+                </label>
+                <label for="title">
+                    <span>Title</span>
+                    <input type="text" name="title" id="input-title" required>
+                </label>
+                <label for="year">
+                    <span>Year</span>
+                    <input type="number" name="year" id="input-year" required>
+                </label>
+                <button type="submit">Add</button>
+            </form>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Author</th>
+                        <th>Title</th>
+                        <th>Year</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </section>
+    </main>
+</body>
+</html>

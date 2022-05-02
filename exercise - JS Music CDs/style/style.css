@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+    --color-main: rgb(45, 51, 201);
+}
+
+main {
+    width: 100%;
+    border: thin solid var(--color-main);
+}
+
+h1 {
+    width: 100%;
+    padding: 1rem 6%;
+    color: white;
+    background: var(--color-main)
+}
+
+section {
+    margin-top: .5rem;
+    margin-bottom: 2rem;
+    margin-inline: auto;
+    max-width: 970px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    margin-bottom: .5rem;
+}
+
+form label {
+    width: 100%;
+    display: flex;
+    gap: .5rem;
+    justify-content: space-between;
+    font-size: 1.2rem;
+}
+
+form label input {
+    width: 80%;
+}
+
+form label:nth-child(3) input {
+    width: 30%;
+}
+
+form button {
+    margin-top: .5rem;
+    width: fit-content;
+    padding: .375rem .5rem;
+    font-size: 1.1rem;
+}
+
+table {
+    border: thin solid var(--color-main);
+    width: calc(100%);
+}
+
+th, td {
+    text-align: start;
+    padding-inline: .5rem;
+}
+
+td:nth-child(3) {
+    text-align: end;
+}
+
+td:nth-child(4) {
+    cursor: pointer;
+}
+
+th {
+    background: var(--color-main);
+    border: thin solid white;
+    color: white;
+}
+
+@media screen and (max-width: 970px) { 
+    section {
+        margin-inline: .5rem;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    form label:not(:nth-child(3)) {
+        flex-direction: column;
+    }
+    
+    form label:not(:nth-child(3)) input {
+        width: 100%;
+    }
+
+    form label:nth-child(3) input {
+        width: 50%;
+    }
+}
